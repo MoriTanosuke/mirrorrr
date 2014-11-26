@@ -126,10 +126,10 @@ class MirroredContent(object):
                                                      content)
         break
 
-    # If the transformed content is over 1MB, truncate it (yikes!)
-    if len(content) > MAX_CONTENT_SIZE:
-      logging.warning("Content is over 1MB; truncating")
-      content = content[:MAX_CONTENT_SIZE]
+    ## If the transformed content is over 1MB, truncate it (yikes!)
+    #if len(content) > MAX_CONTENT_SIZE:
+    #  logging.warning("Content is over 1MB; truncating")
+    #  content = content[:MAX_CONTENT_SIZE]
 
     new_content = MirroredContent(
       base_url=base_url,
